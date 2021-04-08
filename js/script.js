@@ -6,7 +6,7 @@ function init() {
 
     data: {
 
-      'todos' : ['First todo', 'Second todo', 'Third todo'],
+      'todos' : ['first todo', 'second todo', 'third todo'],
       'newTodo' : ''
     },
 

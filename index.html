@@ -23,7 +23,7 @@
         <div class="list-cont">
           <ul v-if="todos.length > 0">
             <li v-for="(todo, index) in todos">
-              <span>{{ todo }}</span>
+              <span class="first-letter">{{ todo }}</span>
               <i @click="removeTodo(index)" class="fas fa-times"></i>
             </li>
           </ul>

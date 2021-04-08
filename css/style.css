@@ -30,11 +30,6 @@ ul li {
   justify-content: space-between;
 }
 
-li:first-letter {
-
-  text-transform: uppercase;
-}
-
 img {
   width: 300px;
 }
@@ -64,6 +59,10 @@ button {
 button:active {
   color: #fff;
   background-color: #001533;
+}
+
+span.first-letter:first-letter {
+  text-transform: uppercase;
 }
 
 .cont {
