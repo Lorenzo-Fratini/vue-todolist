@@ -16,16 +16,19 @@
         <img src="https://www.boolean.careers/images/misc/logo.png" alt="logo">
         
         <div class="input-cont">
-          <input v-model="newTodo" type="text" placeholder="New todo">
+          <input v-model="newTodo" @keyup.enter="addTodo" type="text" placeholder="New todo">
           <button @click="addTodo">Add</button>
         </div>
         
         <div class="list-cont">
-          <ul>
-            <li v-for="todo in todos">
+          <ul v-if="todos.length > 0">
+            <li v-for="(todo, index) in todos">
               <span>{{ todo }}</span>
-              <i class="fas fa-times"></i>
+              <i @click="removeTodo(index)" class="fas fa-times"></i>
             </li>
+          </ul>
+          <ul v-else>
+            <li class="empty">Todo list is empty</li>
           </ul>
         </div>
 

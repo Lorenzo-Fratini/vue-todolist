@@ -30,6 +30,11 @@ ul li {
   justify-content: space-between;
 }
 
+li:first-letter {
+
+  text-transform: uppercase;
+}
+
 img {
   width: 300px;
 }
@@ -80,4 +85,9 @@ button:active {
   background: #eee;
   border-radius: 10px;
   padding: 20px 5px;
+}
+
+li.empty {
+  border: none;
+  font-style: italic;
 }

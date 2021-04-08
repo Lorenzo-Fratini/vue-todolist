@@ -19,6 +19,11 @@ function init() {
           this.todos.push(this.newTodo);
           this.newTodo = '';
         }
+      },
+
+      removeTodo: function(index) {
+
+        this.todos.splice(index, 1);
       }
 
     }
