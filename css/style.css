@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Montserrat';
+  background: #001533;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 10px 5px;
+  color: #001533;
+  border-bottom: 1px solid #001533;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 300px;
+}
+
+input {
+  width: 380px;
+  height: 30px;
+  border: 1px solid #001533;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+button {
+  min-width: 100px;
+  height: 30px;
+  border: 1px solid #001533;
+  border-radius: 10px;
+  color: #001533;
+  background: transparent;
+  cursor: pointer;
+}
+
+button:active {
+  color: #fff;
+  background-color: #001533;
+}
+
+.cont {
+  width: 600px;
+  padding: 20px 50px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.input-cont {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-cont {
+  width: 100%;
+  background: #eee;
+  border-radius: 10px;
+  padding: 20px 5px;
+}

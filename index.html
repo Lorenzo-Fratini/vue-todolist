@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/script.js"></script>
+    <title>vue-todolist</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="cont">
+        
+        <img src="https://www.boolean.careers/images/misc/logo.png" alt="logo">
+        
+        <div class="input-cont">
+          <input v-model="newTodo" type="text" placeholder="New todo">
+          <button @click="addTodo">Add</button>
+        </div>
+        
+        <div class="list-cont">
+          <ul>
+            <li v-for="todo in todos">
+              <span>{{ todo }}</span>
+              <i class="fas fa-times"></i>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
